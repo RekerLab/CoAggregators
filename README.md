@@ -1,6 +1,9 @@
+
+![CoAggregators2](https://user-images.githubusercontent.com/127516906/230427518-7707ab2a-443d-41b1-ab3d-db68505045f9.png)
+
 # Code and data to study and predict drug-excipient co-aggregation for nanoparticle formation
 
-For more information, please refer to the associated publications.
+For more information, please refer to the associated publication:
 https://www.nature.com/articles/s41565-021-00870-y
 
 If you use this data or code, please kindly cite ` Reker et al. Nature Nanotechnology 2021 https://doi.org/10.1038/s41565-021-00870-y`
@@ -11,7 +14,7 @@ The machine learning and the molecular simulations have been enabled through a b
 We have generated two distinct conda environments to enable the implementation of these two pipelines.
 
 ## Machine Learning
-runs in Python 2.7 using the [scikit-learn library](https://scikit-learn.org/) as well as the [RDKit](http://rdkit.org/). 
+Runs in Python 2.7 using the [scikit-learn library](https://scikit-learn.org/) as well as [RDKit](http://rdkit.org/). 
 Optional libraries from
 [OpenPyXL](https://openpyxl.readthedocs.io/en/stable/) and [Joblib](https://joblib.readthedocs.io/en/latest/) enable
 reading of self-aggregation data from the Shoichet lab as well as parallelization of code for more efficient processing 
@@ -34,7 +37,7 @@ Dependent on Python libraries [OpenMM](http://openmm.org/), [openmoltools](https
 [ambermini](https://github.com/choderalab/ambermini) as a stripped down version of [Amber](http://ambermd.org/),
 [MDTraj](http://mdtraj.org/), [ParmEd](http://parmed.github.io/ParmEd), and [RDKit](http://rdkit.org/). 
 Also requires an installation of [PACKMOL](http://m3g.iqm.unicamp.br/packmol/home.shtml) 
-A fresh installation of Ubuntu 18 and anaconda can be set up to run these experiments using
+A fresh installation of [Ubuntu 18](https://ubuntu.com/blog/tag/ubuntu-18-04) and [anaconda](https://anaconda.org/) can be set up to run these experiments using:
 
 ```
 conda create --name simulations
@@ -61,10 +64,10 @@ export PATH="/home/user/packmol-20.010:$PATH"
 # Descriptions of folders
 
 ###  data 
-contains structural information of the used molecules and the screening results
+* Structural information of utilized molecules and screening results.
 
 ### machine learning 
-contains Python code to run predictions of self-aggregation and co-aggregation. All scripts also contain evaluations and bechmarks as well as adversarial control calculations.
+* Python code to run predictions of self-aggregation and co-aggregation. All scripts also contain evaluations and bechmarks as well as adversarial control calculations.
 
 ### simulations 
-contains code to run and automatically analyze short MD simulations to assess interaction potential of drug molecules and excipients
+* Code to run and automatically analyze short MD simulations to assess interaction potential of drug molecules and excipients.
