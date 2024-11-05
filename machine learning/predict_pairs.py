@@ -140,7 +140,6 @@ for i in range(len(drugs)):
 		p2 += [excipients_names[j]]
     
 	p = np.append(p,model.predict_proba(x_temp)[:,1])
-	print "yo"
 
 
 for i in range(len(drugs)):
@@ -151,7 +150,6 @@ for i in range(len(drugs)):
 		p2 += [other_drugs_names[j]]
     
 	p = np.append(p,model.predict_proba(x_temp)[:,1])
-	print "yo"
 
 
 
